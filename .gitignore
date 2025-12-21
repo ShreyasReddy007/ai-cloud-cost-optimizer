@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# OS
+.DS_Store
+
+# Output artifacts (To commit later)
+outputs/*.json
+outputs/*.txt
