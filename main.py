@@ -10,6 +10,8 @@ from llm.profile_extractor import extract_project_profile
 from llm.billing_generator import generate_mock_billing
 from analysis.cost_analyzer import analyze_costs
 from llm.recommendations import generate_recommendations
+from utils.report_exporter import export_html_report
+
 
 
 def main():
@@ -81,7 +83,9 @@ def main():
 
         # Option 4: Export report (future extension)
         elif choice == "4":
-            print("\n📦 Export feature coming soon (HTML / PDF).")
+            report = read_json_file("cost_optimization_report.json")
+            path = export_html_report(report)
+            print(f"\n📄 HTML report exported successfully: {path}")
 
         # Option 5: Exit
         elif choice == "5":
