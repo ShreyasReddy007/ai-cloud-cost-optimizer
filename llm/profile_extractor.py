@@ -74,7 +74,8 @@ def _call_llm(prompt: str) -> str:
 
     return response.json()["choices"][0]["message"]["content"]
 
-
+import re
+import json
 def extract_project_profile(project_description: str) -> dict:
     prompt = f"""
 From the following project description, extract a structured project profile.
@@ -82,7 +83,9 @@ From the following project description, extract a structured project profile.
 Rules:
 - Output ONLY valid JSON
 - Fill missing fields with null or empty lists
-- Budget must be a number (INR per month)
+- If the project description explicitly mentions a numeric budget,
+  you MUST use that exact value.
+- Do NOT infer, estimate, or adjust the budget.
 
 JSON format:
 {{
@@ -113,6 +116,12 @@ Project description:
         raise ValueError(
             f"LLM returned invalid JSON.\nRaw output:\n{raw_output}"
         ) from e
+
+    # ---- HARD SAFETY: enforce explicit user budget ----
+    match = re.search(r'(\d+)\s*INR', project_description, re.IGNORECASE)
+    if match:
+        explicit_budget = int(match.group(1))
+        data["budget_inr_per_month"] = explicit_budget
 
     validate_json(data, PROJECT_PROFILE_SCHEMA)
     return data
