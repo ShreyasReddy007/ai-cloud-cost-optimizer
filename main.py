@@ -11,7 +11,7 @@ from llm.billing_generator import generate_mock_billing
 from analysis.cost_analyzer import analyze_costs
 from llm.recommendations import generate_recommendations
 from utils.report_exporter import export_html_report
-
+from utils.pdf_exporter import export_pdf_report
 
 
 def main():
@@ -84,8 +84,24 @@ def main():
         # Option 4: Export report (future extension)
         elif choice == "4":
             report = read_json_file("cost_optimization_report.json")
-            path = export_html_report(report)
-            print(f"\n📄 HTML report exported successfully: {path}")
+
+            print("\nChoose export format:")
+            print("1. HTML")
+            print("2. PDF")
+
+            export_choice = input("Select option [1/2]: ").strip()
+
+            if export_choice == "1":
+                from utils.report_exporter import export_html_report
+                path = export_html_report(report)
+                print(f"\n📄 HTML report exported: {path}")
+
+            elif export_choice == "2":
+                path = export_pdf_report(report)
+                print(f"\n📕 PDF report exported: {path}")
+
+            else:
+                print("Invalid export option.")
 
         # Option 5: Exit
         elif choice == "5":

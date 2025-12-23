@@ -12,5 +12,3 @@ __pycache__/
 # Output artifacts (To commit later)
 outputs/*.json
 outputs/*.txt
-outputs/*.html
-outputs/*.pdf
