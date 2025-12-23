@@ -1,0 +1,147 @@
+{
+  "project_name": "Ecommerce Analytics Platform",
+  "analysis": {
+    "total_monthly_cost": 3290.0,
+    "budget": 3000,
+    "budget_variance": 290.0,
+    "is_over_budget": true,
+    "service_costs": {
+      "Compute": 990.0,
+      "Database": 1125.0,
+      "Storage": 900.0,
+      "Networking": 175.0,
+      "Monitoring": 100.0
+    },
+    "high_cost_services": {
+      "Compute": 990.0,
+      "Database": 1125.0
+    }
+  },
+  "recommendations": [
+    {
+      "title": "Migrate to Free-Tier MongoDB",
+      "service": "Database",
+      "current_cost": 1125.0,
+      "potential_savings": 500.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Migrate from paid MongoDB to free-tier MongoDB Atlas",
+      "implementation_effort": "Low",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "AWS",
+        "GCP",
+        "Azure"
+      ]
+    },
+    {
+      "title": "Use AWS Free Tier for Compute",
+      "service": "Compute",
+      "current_cost": 990.0,
+      "potential_savings": 200.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Utilize AWS Free Tier for compute resources during off-peak hours",
+      "implementation_effort": "Medium",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Implement Azure Reserved Instances for Compute",
+      "service": "Compute",
+      "current_cost": 990.0,
+      "potential_savings": 150.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Purchase Azure Reserved Instances for compute resources",
+      "implementation_effort": "High",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "Azure"
+      ]
+    },
+    {
+      "title": "Use GCP's Persistent Disk for Storage",
+      "service": "Storage",
+      "current_cost": 900.0,
+      "potential_savings": 100.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Migrate from standard storage to persistent disk for storage resources",
+      "implementation_effort": "Medium",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "GCP"
+      ]
+    },
+    {
+      "title": "Implement AWS CloudWatch for Monitoring",
+      "service": "Monitoring",
+      "current_cost": 100.0,
+      "potential_savings": 0.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Utilize AWS CloudWatch for monitoring resources instead of third-party tools",
+      "implementation_effort": "Low",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Azure Functions for Serverless Compute",
+      "service": "Compute",
+      "current_cost": 990.0,
+      "potential_savings": 50.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Migrate from standard compute to Azure Functions for serverless compute",
+      "implementation_effort": "High",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "Azure"
+      ]
+    },
+    {
+      "title": "Implement Open-Source Load Balancer",
+      "service": "Networking",
+      "current_cost": 175.0,
+      "potential_savings": 50.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Implement open-source load balancer instead of commercial load balancer",
+      "implementation_effort": "Medium",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "AWS",
+        "GCP",
+        "Azure"
+      ]
+    },
+    {
+      "title": "Use AWS Lambda for Serverless Compute",
+      "service": "Compute",
+      "current_cost": 990.0,
+      "potential_savings": 25.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Migrate from standard compute to AWS Lambda for serverless compute",
+      "implementation_effort": "High",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Implement GCP's Cloud Logging for Monitoring",
+      "service": "Monitoring",
+      "current_cost": 100.0,
+      "potential_savings": 25.0,
+      "recommendation_type": "Cost Optimization",
+      "description": "Utilize GCP's Cloud Logging for monitoring resources instead of third-party tools",
+      "implementation_effort": "Low",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "GCP"
+      ]
+    }
+  ],
+  "summary": {
+    "total_potential_savings": 1100.0,
+    "recommendations_count": 9
+  }
+}

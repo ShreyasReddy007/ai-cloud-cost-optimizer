@@ -1,0 +1,200 @@
+[
+  {
+    "month": "2022-07",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 240,
+    "unit": "hours",
+    "cost_inr": 450,
+    "desc": "t2.micro instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 10,
+    "unit": "GB",
+    "cost_inr": 150,
+    "desc": "MongoDB instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 50,
+    "unit": "GB",
+    "cost_inr": 150,
+    "desc": "S3 bucket in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 100,
+    "unit": "GB",
+    "cost_inr": 50,
+    "desc": "Data transfer out from Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "log-group-storage-gb",
+    "usage_quantity": 5,
+    "unit": "GB",
+    "cost_inr": 25,
+    "desc": "CloudWatch logs in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 160,
+    "unit": "hours",
+    "cost_inr": 240,
+    "desc": "t2.micro instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 15,
+    "unit": "GB",
+    "cost_inr": 225,
+    "desc": "MongoDB instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 75,
+    "unit": "GB",
+    "cost_inr": 375,
+    "desc": "S3 bucket in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 200,
+    "unit": "GB",
+    "cost_inr": 100,
+    "desc": "Data transfer out from Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "log-group-storage-gb",
+    "usage_quantity": 10,
+    "unit": "GB",
+    "cost_inr": 50,
+    "desc": "CloudWatch logs in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 80,
+    "unit": "hours",
+    "cost_inr": 120,
+    "desc": "t2.micro instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 20,
+    "unit": "GB",
+    "cost_inr": 300,
+    "desc": "MongoDB instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 25,
+    "unit": "GB",
+    "cost_inr": 125,
+    "desc": "S3 bucket in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 50,
+    "unit": "GB",
+    "cost_inr": 25,
+    "desc": "Data transfer out from Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "log-group-storage-gb",
+    "usage_quantity": 5,
+    "unit": "GB",
+    "cost_inr": 25,
+    "desc": "CloudWatch logs in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef3",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 120,
+    "unit": "hours",
+    "cost_inr": 180,
+    "desc": "t2.micro instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef3",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 30,
+    "unit": "GB",
+    "cost_inr": 450,
+    "desc": "MongoDB instance in Mumbai region"
+  },
+  {
+    "month": "2022-07",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef3",
+    "region": "ap-south-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 50,
+    "unit": "GB",
+    "cost_inr": 250,
+    "desc": "S3 bucket in Mumbai region"
+  }
+]

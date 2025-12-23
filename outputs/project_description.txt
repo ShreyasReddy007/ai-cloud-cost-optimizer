@@ -1,0 +1,1 @@
+I want to build an ecommerce analytics platform using React, Node.js and MongoDB. It will be hosted on AWS. My monthly budget is 3000 INR. It should be scalable and cost efficient.

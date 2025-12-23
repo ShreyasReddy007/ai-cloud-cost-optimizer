@@ -1,0 +1,16 @@
+{
+  "name": "Ecommerce Analytics Platform",
+  "budget_inr_per_month": 3000,
+  "description": "Ecommerce analytics platform using React, Node.js and MongoDB, hosted on AWS.",
+  "tech_stack": {
+    "frontend": "React",
+    "backend": "Node.js",
+    "database": "MongoDB",
+    "hosting": "AWS",
+    "proxy": null
+  },
+  "non_functional_requirements": [
+    "scalable",
+    "cost efficient"
+  ]
+}

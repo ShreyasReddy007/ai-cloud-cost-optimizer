@@ -8,7 +8,3 @@ __pycache__/
 
 # OS
 .DS_Store
-
-# Output artifacts (To commit later)
-outputs/*.json
-outputs/*.txt
